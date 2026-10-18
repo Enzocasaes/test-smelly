@@ -4,7 +4,7 @@ Aluno: Enzo Casaes Figueiró (856804) · Disciplina: Teste de Software
 Projeto-base: https://github.com/CleitonSilvaT/test-smelly
 
 ## Conteúdo
-- `RELATORIO.pdf` — relatório escrito (capa, análise de smells, antes/depois, print do ESLint, conclusão); fonte em `RELATORIO.md`
+- `Relatorio_Refatoracao_Test_Smells_Enzo_Casaes.pdf` — relatório escrito (capa, análise de smells, antes/depois, print do ESLint, conclusão); versão em Markdown em `RELATORIO.md`
 - `test/userService.smelly.test.js` — suíte original (inalterada)
 - `test/userService.clean.test.js` — suíte refatorada (AAA, um comportamento por teste)
 - `.eslintrc.json` — ESLint + eslint-plugin-jest (no-disabled-tests, no-conditional-expect, no-identical-title)
