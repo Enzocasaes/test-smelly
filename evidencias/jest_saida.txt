@@ -1,0 +1,32 @@
+PASS test/userService.clean.test.js
+  UserService - testes refatorados
+    createUser
+      √ cria um usuário adulto com status ativo (2 ms)
+      √ rejeita usuário menor de idade (6 ms)
+      √ rejeita cadastro sem nome (1 ms)
+      √ rejeita cadastro sem email
+      √ rejeita cadastro sem idade (1 ms)
+    getUserById
+      √ retorna o usuário cadastrado para um ID existente
+      √ retorna null para um ID inexistente
+    deactivateUser
+      √ desativa um usuário comum (1 ms)
+      √ não desativa um administrador
+      √ retorna false quando o usuário não existe
+    generateUserReport
+      √ informa que não há usuários quando a base está vazia (1 ms)
+      √ inclui nome e status do usuário no relatório
+
+PASS test/userService.smelly.test.js
+  UserService - Suíte de Testes com Smells
+    √ deve criar e buscar um usuário corretamente
+    √ deve desativar usuários se eles não forem administradores
+    √ deve gerar um relatório de usuários formatado (1 ms)
+    √ deve falhar ao criar usuário menor de idade
+    ○ skipped deve retornar uma lista vazia quando não há usuários
+
+Test Suites: 2 passed, 2 total
+Tests:       1 skipped, 16 passed, 17 total
+Snapshots:   0 total
+Time:        0.246 s, estimated 1 s
+Ran all test suites.

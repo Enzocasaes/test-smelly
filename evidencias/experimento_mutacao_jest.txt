@@ -1,0 +1,26 @@
+FAIL test/userService.clean.test.js
+  ● UserService - testes refatorados › createUser › rejeita usuário menor de idade
+
+    expect(received).toThrow(expected)
+
+    Expected substring: "O usuário deve ser maior de idade."
+
+    Received function did not throw
+
+      35 |       // Act / Assert
+      36 |       expect(() => userService.createUser('Menor', 'menor@email.com', idadeMinimaInvalida))
+    > 37 |         .toThrow('O usuário deve ser maior de idade.');
+         |          ^
+      38 |     });
+      39 |
+      40 |     test.each([
+
+      at Object.toThrow (test/userService.clean.test.js:37:10)
+
+PASS test/userService.smelly.test.js
+
+Test Suites: 1 failed, 1 passed, 2 total
+Tests:       1 failed, 1 skipped, 15 passed, 17 total
+Snapshots:   0 total
+Time:        0.254 s, estimated 1 s
+Ran all test suites.

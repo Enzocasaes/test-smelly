@@ -1,0 +1,22 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:jest/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "script"
+  },
+  "plugins": ["jest"],
+  "ignorePatterns": ["node_modules/"],
+  "rules": {
+    "jest/no-disabled-tests": "warn",
+    "jest/no-conditional-expect": "error",
+    "jest/no-identical-title": "error"
+  }
+}
